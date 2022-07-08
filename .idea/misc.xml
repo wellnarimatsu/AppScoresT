@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/drawable/img_shape.xml" value="0.1815" />
+        <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_basquete.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_futebol.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_taco.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

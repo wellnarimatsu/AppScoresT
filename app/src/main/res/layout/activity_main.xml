@@ -21,16 +21,26 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
 
-
-
             android:layout_marginRight="10dp"
             android:background="@drawable/img_shape"
             android:scaleType="centerInside"
-            android:src="@drawable/imagem_padrao"
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/text_fut"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/img_futebol"
+            app:layout_constraintBottom_toBottomOf="@id/img_futebol"
+            android:text="Fut"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="15dp"
+            />
 
 
         <ImageView
@@ -45,6 +55,19 @@
             app:layout_constraintStart_toStartOf="@id/img_futebol"
             app:layout_constraintTop_toBottomOf="@id/img_futebol"
             app:layout_constraintEnd_toStartOf="@id/img_tenis"/>
+        <TextView
+            android:id="@+id/text_volei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/img_volei"
+            app:layout_constraintBottom_toBottomOf="@id/img_volei"
+            android:text="Vôlei"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            />
 
         <ImageView
             android:id="@+id/img_tenis"
@@ -56,6 +79,20 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="5dp"
             android:background="@drawable/img_shape"
+            />
+
+        <TextView
+            android:id="@+id/text_tenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/img_tenis"
+            app:layout_constraintBottom_toBottomOf="@id/img_tenis"
+            android:text="Tênis"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
             />
         <ImageView
             android:id="@+id/img_taco"
@@ -70,6 +107,20 @@
             app:layout_constraintStart_toStartOf="@id/img_futebol"
             app:layout_constraintTop_toBottomOf="@id/img_volei" />
 
+        <TextView
+            android:id="@+id/text_taco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/img_taco"
+            app:layout_constraintBottom_toBottomOf="@id/img_taco"
+            android:text="Taco"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
         <ImageView
             android:id="@+id/img_basquete"
             android:layout_width="190dp"
@@ -83,6 +134,19 @@
             app:layout_constraintStart_toStartOf="@id/img_futebol"
             app:layout_constraintTop_toBottomOf="@id/img_taco"
             app:layout_constraintEnd_toStartOf="@id/img_truco"/>
+        <TextView
+            android:id="@+id/text_basquete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/img_basquete"
+            app:layout_constraintBottom_toBottomOf="@id/img_basquete"
+            android:text="Basquete"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            />
 
         <ImageView
 
@@ -97,6 +161,19 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/img_shape"
             app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <TextView
+            android:id="@+id/text_truco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/img_truco"
+            app:layout_constraintBottom_toBottomOf="@id/img_truco"
+            android:text="Truco"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
             />
 
 

@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppScoresT">
         <activity
+            android:name=".ui.Truco"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Basquete"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Taco"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Tenis"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Volei"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Futebol"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
