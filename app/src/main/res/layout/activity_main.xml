@@ -22,7 +22,7 @@
             android:layout_marginTop="10dp"
 
             android:layout_marginRight="10dp"
-            android:background="@drawable/img_shape"
+            android:background="@drawable/img_fut_teste"
             android:scaleType="centerInside"
 
             app:layout_constraintEnd_toEndOf="parent"

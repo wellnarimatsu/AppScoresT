@@ -2,7 +2,10 @@ package br.com.appscorest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.com.appscorest.databinding.ActivityFutebolBinding
 import br.com.appscorest.databinding.ActivityMainBinding
+import br.com.appscorest.extensions.vaiPara
+import br.com.appscorest.ui.Futebol
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.imgFutebol.setOnClickListener{
-
+            vaiPara(Futebol::class.java)
         }
 
 
