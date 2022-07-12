@@ -1,9 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Volei">
+    tools:context=".ui.Volei"
+    android:background="@color/dark_background">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/pontuacao_volei_time1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/x"
+        android:background="@color/azul_time1"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="80sp" />
+
+    <ImageView
+        android:id="@+id/vez_time1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="gone"
+
+        android:layout_alignStart="@id/pontuacao_volei_time1"
+        android:layout_alignTop="@id/pontuacao_volei_time1"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/ic_volleyball" />
+
+    <TextView
+        android:id="@+id/set_time1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pontuacao_volei_time1"
+        android:layout_alignStart="@id/pontuacao_volei_time1"
+        android:background="@color/ligh_grey"
+        android:gravity="center"
+
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="x"
+
+        android:textColor="@color/white"
+        android:textSize="80sp" />
+
+
+    <TextView
+        android:id="@+id/pontuacao_volei_time2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/x"
+        android:background="@color/vermelho_time2"
+        android:padding="19.8dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="80sp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/vez_time2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="gone"
+
+        android:layout_alignStart="@id/pontuacao_volei_time2"
+        android:layout_alignTop="@id/pontuacao_volei_time2"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/ic_volleyball" />
+
+    <TextView
+        android:id="@+id/set_time2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pontuacao_volei_time2"
+        android:layout_alignStart="@id/pontuacao_volei_time2"
+        android:background="@color/ligh_grey"
+        android:gravity="center"
+
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+
+</RelativeLayout>

@@ -6,6 +6,7 @@ import br.com.appscorest.databinding.ActivityFutebolBinding
 import br.com.appscorest.databinding.ActivityMainBinding
 import br.com.appscorest.extensions.vaiPara
 import br.com.appscorest.ui.Futebol
+import br.com.appscorest.ui.Volei
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,9 +16,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        title ="ScoresT"
 
         binding.imgFutebol.setOnClickListener{
             vaiPara(Futebol::class.java)
+        }
+
+        binding.imgVolei.setOnClickListener{
+            vaiPara(Volei::class.java)
         }
 
 

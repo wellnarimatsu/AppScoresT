@@ -5,19 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.Futebol"
-    android:background="@color/dark_background">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/text_time1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/pontuacao_time1"
-        android:layout_alignLeft="@id/pontuacao_time1"
-        android:layout_toLeftOf="@id/contra"
+        android:layout_alignStart="@id/pontuacao_time1"
         android:padding="7dp"
         android:text="Time 1"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textColor="@color/azul_time1"
+        android:textSize="23sp"
 
         android:textStyle="bold" />
 
@@ -28,31 +27,31 @@
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@id/contra"
 
-        android:padding="16dp"
+        android:padding="20dp"
         android:text="0"
-        android:textColor="@color/white"
-        android:textSize="80dp" />
+        android:textColor="@color/azul_time1"
+        android:textSize="80sp" />
 
     <TextView
         android:id="@+id/contra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:padding="20dp"
         android:text="X"
-        android:textSize="50dp"
-        android:padding="10dp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"
+        android:textSize="50sp" />
 
     <TextView
         android:id="@+id/text_time2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/pontuacao_time2"
-        android:layout_toRightOf="@id/contra"
+        android:layout_toEndOf="@id/contra"
         android:padding="7dp"
         android:text="Time 2"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textColor="@color/vermelho_time2"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <TextView
@@ -60,11 +59,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@id/contra"
-        android:padding="16dp"
+        android:layout_toEndOf="@id/contra"
+        android:padding="20dp"
         android:text="0"
-        android:textColor="@color/white"
-        android:textSize="80dp" />
+        android:textColor="@color/vermelho_time2"
+        android:textSize="80sp" />
 
 
 </RelativeLayout>
