@@ -6,6 +6,7 @@ import br.com.appscorest.databinding.ActivityFutebolBinding
 import br.com.appscorest.databinding.ActivityMainBinding
 import br.com.appscorest.extensions.vaiPara
 import br.com.appscorest.ui.Futebol
+import br.com.appscorest.ui.Tenis
 import br.com.appscorest.ui.Volei
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.imgVolei.setOnClickListener{
             vaiPara(Volei::class.java)
+        }
+
+        binding.imgTenis.setOnClickListener{
+            vaiPara(Tenis::class.java)
         }
 
 

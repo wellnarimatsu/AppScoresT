@@ -16,7 +16,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/img_futebol"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
 
@@ -25,15 +25,15 @@
             android:scaleType="centerInside"
 
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.842"
             app:layout_constraintStart_toStartOf="parent"
+
             app:layout_constraintTop_toTopOf="parent"
 
-            app:shapeAppearanceOverlay="@style/roundImageCorner"
 
+            app:shapeAppearanceOverlay="@style/roundImageCorner" />
 
-            />
-
-<TextView
+        <TextView
     android:id="@+id/text_fut"
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
@@ -54,7 +54,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/img_volei"
             android:layout_width="0dp"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             android:layout_marginEnd="5dp"
             android:background="@drawable/imagem_fundo_volei"
 
@@ -84,13 +84,14 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/img_tenis"
             android:layout_width="0dp"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             app:layout_constraintStart_toEndOf="@id/img_volei"
             app:layout_constraintTop_toBottomOf="@id/img_futebol"
             app:layout_constraintEnd_toEndOf="@id/img_futebol"
             android:layout_marginTop="10dp"
             android:layout_marginStart="5dp"
-            android:background="@drawable/img_shape"
+            android:background="@drawable/imagem_fundo_tenis"
+            app:shapeAppearanceOverlay="@style/roundImageCorner"
             />
 
         <TextView
@@ -109,10 +110,11 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/img_taco"
             android:layout_width="0dp"
-            android:layout_height="200dp"
-            android:background="@drawable/img_shape"
+            android:layout_height="180dp"
+            android:background="@drawable/imagem_fundo_taco"
 
             android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/roundImageCorner"
 
 
             app:layout_constraintEnd_toEndOf="@id/img_futebol"
@@ -136,7 +138,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/img_basquete"
             android:layout_width="0dp"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/img_shape"
@@ -152,11 +154,12 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@id/img_basquete"
             app:layout_constraintBottom_toBottomOf="@id/img_basquete"
+            app:layout_constraintEnd_toEndOf="@id/img_basquete"
             android:text="Basquete"
             android:textSize="35sp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="10dp"
             android:layout_marginBottom="20dp"
             />
 
@@ -164,7 +167,7 @@
 
             android:id="@+id/img_truco"
             android:layout_width="0dp"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             app:layout_constraintStart_toEndOf="@id/img_basquete"
             app:layout_constraintTop_toBottomOf="@id/img_taco"
             app:layout_constraintEnd_toEndOf="@id/img_futebol"
