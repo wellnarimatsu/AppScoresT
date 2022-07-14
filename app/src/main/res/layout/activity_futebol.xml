@@ -65,5 +65,18 @@
         android:textColor="@color/vermelho_time2"
         android:textSize="80sp" />
 
+    <Button
+        android:id="@+id/btn_zerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZERAR"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_below="@id/contra"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        />
+
 
 </RelativeLayout>

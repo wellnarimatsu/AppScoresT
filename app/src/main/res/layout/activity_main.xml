@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".MainActivity"
+        android:background="@color/white"
         >
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -41,9 +42,9 @@
     app:layout_constraintBottom_toBottomOf="@id/img_futebol"
     android:text="Fut"
     android:textColor="@color/white"
-    android:textSize="35sp"
+    android:textSize="30sp"
     android:textStyle="bold"
-    android:layout_marginStart="30dp"
+    android:layout_marginStart="20dp"
     android:layout_marginBottom="15dp"
 
     />
@@ -74,7 +75,7 @@
             app:layout_constraintStart_toStartOf="@id/img_volei"
             app:layout_constraintBottom_toBottomOf="@id/img_volei"
             android:text="Vôlei"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_marginStart="20dp"
@@ -101,7 +102,7 @@
             app:layout_constraintStart_toStartOf="@id/img_tenis"
             app:layout_constraintBottom_toBottomOf="@id/img_tenis"
             android:text="Tênis"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:layout_marginStart="20dp"
@@ -127,8 +128,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@id/img_taco"
             app:layout_constraintBottom_toBottomOf="@id/img_taco"
-            android:text="Taco"
-            android:textSize="35sp"
+            android:text="Taco | Bets"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:layout_marginStart="20dp"
@@ -141,7 +142,8 @@
             android:layout_height="180dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/img_shape"
+            android:background="@drawable/img_fundo_basquete"
+            app:shapeAppearanceOverlay="@style/roundImageCorner"
 
 
             android:layout_marginTop="10dp"
@@ -154,12 +156,12 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@id/img_basquete"
             app:layout_constraintBottom_toBottomOf="@id/img_basquete"
-            app:layout_constraintEnd_toEndOf="@id/img_basquete"
+
             android:text="Basquete"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="20dp"
             android:layout_marginBottom="20dp"
             />
 
@@ -174,7 +176,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="5dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/img_shape"
+            android:background="@drawable/imagem_fundo_truco"
+            app:shapeAppearanceOverlay="@style/roundImageCorner"
             app:layout_constraintBottom_toBottomOf="parent"
             />
         <TextView
@@ -184,7 +187,7 @@
             app:layout_constraintStart_toStartOf="@id/img_truco"
             app:layout_constraintBottom_toBottomOf="@id/img_truco"
             android:text="Truco"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:layout_marginStart="20dp"

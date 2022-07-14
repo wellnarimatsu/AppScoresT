@@ -14,8 +14,20 @@ class Futebol : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        title="Fut"
+
         var time1 = 0
         var time2 = 0
+
+
+        fun zerarPlacar(){
+            time1 = 0
+            time2 = 0
+
+            binding.pontuacaoTime1.text = time1.toString()
+            binding.pontuacaoTime2.text = time2.toString()
+
+        }
 
 
         binding.pontuacaoTime1.setOnClickListener{
@@ -30,7 +42,18 @@ class Futebol : AppCompatActivity() {
 
         }
 
+        binding.btnZerar.setOnClickListener{
+             zerarPlacar()
+
+        }
+
+
+
+
+
     }
+
+
 
 
 

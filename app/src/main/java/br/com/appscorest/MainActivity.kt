@@ -5,9 +5,7 @@ import android.os.Bundle
 import br.com.appscorest.databinding.ActivityFutebolBinding
 import br.com.appscorest.databinding.ActivityMainBinding
 import br.com.appscorest.extensions.vaiPara
-import br.com.appscorest.ui.Futebol
-import br.com.appscorest.ui.Tenis
-import br.com.appscorest.ui.Volei
+import br.com.appscorest.ui.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +27,18 @@ class MainActivity : AppCompatActivity() {
 
         binding.imgTenis.setOnClickListener{
             vaiPara(Tenis::class.java)
+        }
+
+        binding.imgTaco.setOnClickListener{
+            vaiPara(Taco::class.java)
+        }
+
+        binding.imgBasquete.setOnClickListener{
+            vaiPara(Basquete::class.java)
+        }
+
+        binding.imgTruco.setOnClickListener{
+            vaiPara(Truco::class.java)
         }
 
 
