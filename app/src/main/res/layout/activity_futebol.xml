@@ -1,82 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Futebol"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".ui.Futebol">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgback_time1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/teal_200"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundImageCorner" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_main1pnt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@id/img_menos1pnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgback_time1"
+        app:layout_constraintTop_toTopOf="@id/imgback_time1"
+        app:shapeAppearanceOverlay="@style/roundImageCorner"
+
+        />
+
+    <TextView
+        android:id="@+id/text_mais1pnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:textColor="@color/dark_dark"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/img_main1pnt"
+        app:layout_constraintEnd_toEndOf="@id/img_main1pnt"
+        app:layout_constraintStart_toStartOf="@id/img_main1pnt"
+        app:layout_constraintTop_toTopOf="@id/img_main1pnt"
+
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_menos1pnt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@id/imgback_time1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgback_time1"
+        app:layout_constraintTop_toBottomOf="@id/img_main1pnt"
+        app:shapeAppearanceOverlay="@style/roundImageCorner"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:textColor="@color/dark_dark"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/img_menos1pnt"
+        app:layout_constraintEnd_toEndOf="@id/img_menos1pnt"
+        app:layout_constraintStart_toStartOf="@id/img_menos1pnt"
+        app:layout_constraintTop_toTopOf="@id/img_menos1pnt" />
+
+
+
+
 
     <TextView
         android:id="@+id/text_time1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/pontuacao_time1"
-        android:layout_alignStart="@id/pontuacao_time1"
-        android:padding="7dp"
+        android:layout_marginTop="10dp"
         android:text="Time 1"
-        android:textColor="@color/azul_time1"
-        android:textSize="23sp"
+        android:textColor="@color/ligh_dark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/imgback_time1"
+        app:layout_constraintStart_toStartOf="@id/imgback_time1"
 
-        android:textStyle="bold" />
+        app:layout_constraintTop_toTopOf="@id/imgback_time1" />
 
     <TextView
         android:id="@+id/pontuacao_time1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toLeftOf="@id/contra"
 
-        android:padding="20dp"
+        android:layout_marginTop="0dp"
         android:text="0"
-        android:textColor="@color/azul_time1"
-        android:textSize="80sp" />
+        android:textColor="@color/ligh_dark"
+        android:textSize="80sp"
 
-    <TextView
-        android:id="@+id/contra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:padding="20dp"
-        android:text="X"
-        android:textColor="@color/black"
-        android:textSize="50sp" />
+
+        app:layout_constraintEnd_toEndOf="@id/imgback_time1"
+        app:layout_constraintStart_toStartOf="@id/imgback_time1"
+        app:layout_constraintTop_toBottomOf="@id/text_time1" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgBack_time2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@color/ligh_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_zerar"
+
+        app:shapeAppearanceOverlay="@style/roundImageCorner" />
 
     <TextView
         android:id="@+id/text_time2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/pontuacao_time2"
-        android:layout_toEndOf="@id/contra"
-        android:padding="7dp"
+        android:layout_marginTop="10dp"
         android:text="Time 2"
-        android:textColor="@color/vermelho_time2"
-        android:textSize="23sp"
-        android:textStyle="bold" />
+        android:textColor="@color/teal_200"
+
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/imgBack_time2"
+        app:layout_constraintStart_toStartOf="@id/imgBack_time2"
+        app:layout_constraintTop_toTopOf="@id/imgBack_time2" />
 
     <TextView
         android:id="@+id/pontuacao_time2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toEndOf="@id/contra"
-        android:padding="20dp"
+
         android:text="0"
-        android:textColor="@color/vermelho_time2"
-        android:textSize="80sp" />
+        android:textColor="@color/teal_200"
+        android:textSize="80sp"
+
+        app:layout_constraintEnd_toEndOf="@id/imgBack_time2"
+        app:layout_constraintStart_toStartOf="@id/imgBack_time2"
+        app:layout_constraintTop_toBottomOf="@id/text_time2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img2_mais1pnt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/dark_dark"
+        app:layout_constraintBottom_toTopOf="@id/img2_menos1pnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imgBack_time2"
+        app:layout_constraintTop_toTopOf="@id/imgBack_time2"
+        app:shapeAppearanceOverlay="@style/roundImageCorner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/img2_mais1pnt"
+        app:layout_constraintEnd_toEndOf="@id/img2_mais1pnt"
+        app:layout_constraintStart_toStartOf="@id/img2_mais1pnt"
+        app:layout_constraintTop_toTopOf="@id/img2_mais1pnt"
+        android:textColor="@color/teal_200"/>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img2_menos1pnt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgBack_time2"
+        app:layout_constraintTop_toBottomOf="@id/img2_mais1pnt"
+        android:background="@color/dark_dark"
+        app:shapeAppearanceOverlay="@style/roundImageCorner"
+        app:layout_constraintBottom_toBottomOf="@id/imgBack_time2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/img2_menos1pnt"
+        app:layout_constraintEnd_toEndOf="@id/img2_menos1pnt"
+        app:layout_constraintStart_toStartOf="@id/img2_menos1pnt"
+        app:layout_constraintTop_toTopOf="@id/img2_menos1pnt"
+        android:textColor="@color/teal_200"/>
+
+
 
     <Button
         android:id="@+id/btn_zerar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ZERAR"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="ZERAR PLACAR"
+        android:textSize="30sp"
         android:textStyle="italic"
-        android:textSize="20sp"
-        android:layout_below="@id/contra"
-        android:layout_marginTop="100dp"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="@color/black"
-        />
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
 
 
-</RelativeLayout>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgback_time1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

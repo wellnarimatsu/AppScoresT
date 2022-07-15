@@ -30,31 +30,44 @@ class Futebol : AppCompatActivity() {
         }
 
 
-        binding.pontuacaoTime1.setOnClickListener{
-            time1 = time1 + 1
-            binding.pontuacaoTime1.text = time1.toString()
 
-        }
+            binding.imgMain1pnt.setOnClickListener{
+                time1 = time1 + 1
+                binding.pontuacaoTime1.text = time1.toString()
+            }
 
-        binding.pontuacaoTime2.setOnClickListener{
-            time2 = time2 + 1
-            binding.pontuacaoTime2.text = time2.toString()
+            binding.imgMenos1pnt.setOnClickListener{
 
-        }
+                time1 = time1 - 1
+                if(time1 >= 0){
+                    binding.pontuacaoTime1.text = time1.toString()
+                }
+
+            }
+
+
+
+            binding.img2Mais1pnt.setOnClickListener{
+                time2 = time2 + 1
+                binding.pontuacaoTime2.text = time2.toString()
+            }
+
+            binding.img2Menos1pnt.setOnClickListener{
+
+
+                if(time2>=0){
+                    time2 = time2 - 1
+                binding.pontuacaoTime2.text = time2.toString()
+                }
+            }
+
+
+
 
         binding.btnZerar.setOnClickListener{
              zerarPlacar()
 
         }
 
-
-
-
-
     }
-
-
-
-
-
 }

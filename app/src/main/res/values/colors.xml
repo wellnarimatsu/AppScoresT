@@ -11,4 +11,9 @@
     <color name="vermelho_time2">#FF1616</color>
     <color name="azul_time1">#2E53FD</color>
     <color name="ligh_grey">#868282</color>
+
+    <color name="dark_dark">#212121</color>
+    <color name="ligh_dark">#323232</color>
+
+
 </resources>
