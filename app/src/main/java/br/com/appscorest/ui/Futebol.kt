@@ -38,8 +38,9 @@ class Futebol : AppCompatActivity() {
 
             binding.imgMenos1pnt.setOnClickListener{
 
-                time1 = time1 - 1
-                if(time1 >= 0){
+
+                if(time1 >= 1){
+                    time1 = time1 - 1
                     binding.pontuacaoTime1.text = time1.toString()
                 }
 
@@ -55,7 +56,7 @@ class Futebol : AppCompatActivity() {
             binding.img2Menos1pnt.setOnClickListener{
 
 
-                if(time2>=0){
+                if(time2 >=1){
                     time2 = time2 - 1
                 binding.pontuacaoTime2.text = time2.toString()
                 }
