@@ -4,35 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Truco">
+    tools:context=".ui.Truco"
+    android:background="@color/ligh_grey">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
-        android:id="@+id/img_back1"
+        android:id="@+id/img_truco_back1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/img_back2"
-        android:background="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@id/bnt_zerar_truco"
+
+        android:background="@color/dark_dark"
         app:shapeAppearanceOverlay="@style/roundImageCorner"
 
         />
 
+    <Button
+        android:id="@+id/btn_3truco_time1"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+
+        android:backgroundTint="@color/white"
+
+        android:text="+3"
+
+        android:textColor="@color/dark_dark"
+        app:layout_constraintBottom_toBottomOf="@id/img_truco_back1"
+        app:layout_constraintEnd_toStartOf="@id/btn_6truco_time1"
+        app:layout_constraintStart_toStartOf="@id/img_truco_back1"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btn_6truco_time1"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+
+        android:backgroundTint="@color/white"
+        android:text="+6"
+        android:textColor="@color/dark_dark"
+
+
+        app:layout_constraintBottom_toBottomOf="@id/img_truco_back1"
+        app:layout_constraintStart_toEndOf="@id/btn_3truco_time1"
+        app:layout_constraintEnd_toStartOf="@id/btn_9truco_time1"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btn_9truco_time1"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+
+        android:backgroundTint="@color/white"
+        android:text="+9"
+        android:textColor="@color/dark_dark"
+
+app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
+        app:layout_constraintBottom_toBottomOf="@id/img_truco_back1"
+        app:layout_constraintStart_toEndOf="@id/btn_6truco_time1"
+        android:layout_marginBottom="15dp"/>
+
+
+    <Button
+        android:id="@+id/btn_12truco_time1"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/white"
+        android:text="+12"
+        android:textColor="@color/dark_dark"
+
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/img_truco_back1"
+        app:layout_constraintEnd_toEndOf="@id/img_truco_back1"
+        app:layout_constraintStart_toEndOf="@id/btn_9truco_time1" />
+
+    <Button
+        android:id="@+id/bnt_zerar_truco"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="@id/img_truco_back1"
+        app:layout_constraintEnd_toEndOf="@id/img_truco_back1"
+        app:layout_constraintTop_toBottomOf="@id/img_truco_back1"
+        app:layout_constraintBottom_toTopOf="@id/img_truco_back2"
+        android:backgroundTint="@color/ligh_dark"
+        android:text="Zerar Placar"
+
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+        app:shapeAppearanceOverlay="@style/roundImageCorner"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_time1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
-        android:textSize="80sp"
-        app:layout_constraintTop_toTopOf="@id/img_back1"
-        app:layout_constraintStart_toStartOf="@id/img_back1"
-        app:layout_constraintBottom_toBottomOf="@id/img_back1"
-        android:textColor="@color/dark_dark"/>
+
+        android:layout_marginTop="20dp"
+        android:text="Time 1"
+        android:textColor="@color/white"
+
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/img_truco_back1"
+        app:layout_constraintTop_toTopOf="@id/img_truco_back1"
+        app:layout_constraintEnd_toEndOf="@id/img_truco_back1"/>
+
     <com.google.android.material.imageview.ShapeableImageView
 
         android:layout_marginStart="10dp"
@@ -40,30 +126,172 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:layout_height="0dp"
-        android:id="@+id/img_back2"
+        android:id="@+id/img_truco_back2"
         android:layout_width="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/img_back1"
+        app:layout_constraintTop_toBottomOf="@id/bnt_zerar_truco"
 
-        android:background="@color/teal_700"
+        android:background="@color/white"
         app:shapeAppearanceOverlay="@style/roundImageCorner"
         />
+    <Button
+        android:id="@+id/btn_3truco_time2"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+
+        android:backgroundTint="@color/dark_dark"
+
+        android:text="+3"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/img_truco_back2"
+        app:layout_constraintEnd_toStartOf="@id/btn_6truco_time2"
+        app:layout_constraintStart_toStartOf="@id/img_truco_back2"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btn_6truco_time2"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+
+        android:backgroundTint="@color/dark_dark"
+        android:text="+6"
+        android:textColor="@color/white"
+
+
+        app:layout_constraintBottom_toBottomOf="@id/img_truco_back2"
+        app:layout_constraintStart_toEndOf="@id/btn_3truco_time2"
+        app:layout_constraintEnd_toStartOf="@id/btn_9truco_time2"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btn_9truco_time2"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+
+        android:backgroundTint="@color/dark_dark"
+        android:text="+9"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toStartOf="@id/btn_12truco_time2"
+        app:layout_constraintBottom_toBottomOf="@id/img_truco_back2"
+        app:layout_constraintStart_toEndOf="@id/btn_6truco_time2"
+        android:layout_marginBottom="15dp"/>
+
+
+    <Button
+        android:id="@+id/btn_12truco_time2"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/dark_dark"
+        android:text="+12"
+        android:textColor="@color/white"
+
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/img_truco_back2"
+        app:layout_constraintEnd_toEndOf="@id/img_truco_back2"
+        app:layout_constraintStart_toEndOf="@id/btn_9truco_time2" />
 
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/text_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 2"
+        android:textSize="20sp"
+        android:textColor="@color/ligh_dark"
+        app:layout_constraintTop_toTopOf="@id/img_truco_back2"
+        app:layout_constraintStart_toStartOf="@id/img_truco_back2"
+        app:layout_constraintEnd_toEndOf="@id/img_truco_back2"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/truco_pnt_time1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="80sp"
-        android:textColor="@color/ligh_dark"
-        app:layout_constraintTop_toTopOf="@id/img_back2"
-        app:layout_constraintStart_toStartOf="@id/img_back2"
-        app:layout_constraintBottom_toBottomOf="@id/img_back2"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/text_time1"
+        app:layout_constraintStart_toStartOf="@id/img_truco_back1"
+        app:layout_constraintEnd_toEndOf="@id/img_truco_back1"
+        android:layout_marginTop="20dp"
         />
+    <TextView
+        android:id="@+id/truco_mais1pnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@id/truco_pnt_time1"
+        app:layout_constraintEnd_toEndOf="@id/img_truco_back1"
+        app:layout_constraintTop_toBottomOf="@id/text_time1"
+        android:textColor="@color/white"
+        android:padding="20dp"
+
+        />
+    <TextView
+        android:id="@+id/truco_menos1pnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="-"
+        android:textColor="@color/white"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+
+        app:layout_constraintStart_toStartOf="@id/img_truco_back1"
+        app:layout_constraintTop_toBottomOf="@id/text_time1"
+        app:layout_constraintEnd_toStartOf="@id/truco_pnt_time1"/>
+
+
+
+
+    <TextView
+        android:id="@+id/truco_pnt_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/text_time2"
+        app:layout_constraintStart_toStartOf="@id/img_truco_back2"
+        app:layout_constraintEnd_toEndOf="@id/img_truco_back2"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/truco_mais1pnt_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@id/truco_pnt_time2"
+        app:layout_constraintEnd_toEndOf="@id/img_truco_back2"
+        app:layout_constraintTop_toBottomOf="@id/text_time2"
+        android:textColor="@color/black"
+        android:padding="20dp"
+
+        />
+    <TextView
+        android:id="@+id/truco_menos1pnt_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="-"
+        android:textColor="@color/black"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+
+        app:layout_constraintStart_toStartOf="@id/img_truco_back2"
+        app:layout_constraintTop_toBottomOf="@id/text_time2"
+        app:layout_constraintEnd_toStartOf="@id/truco_pnt_time2"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
