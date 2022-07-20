@@ -16,6 +16,7 @@ class Truco : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        title="Truco"
 
         var pntTime1 = 0
         var pntTime2 = 0
