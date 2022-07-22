@@ -4,62 +4,285 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Basquete">
+    android:background="@color/ligh_grey"
+    tools:context=".ui.Basquete"
+    >
 
-    <LinearLayout
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_basq_time1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/basq_center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center">
+        app:shapeAppearanceOverlay="@style/roundImageCorner" />
 
-        <Chronometer
-            android:id="@+id/timerCount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="40sp"
-            />
+    <Button
+        android:id="@+id/btn1_basq_mais2"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="+2"
+        app:layout_constraintBottom_toBottomOf="@id/img_basq_time1"
+        app:layout_constraintEnd_toStartOf="@id/btn1_basq_mais3"
+        app:layout_constraintStart_toStartOf="@id/img_basq_time1"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <Button
-                android:id="@+id/btn_start_basquete"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="start"
-                app:icon="@drawable/ic_play"
-                android:textColor="@color/dark_dark"
-                android:layout_marginEnd="10dp"
-                />
-            <Button
-                android:id="@+id/btn_pause_basquete"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="pause"
-                app:icon="@drawable/ic_baseline_pause_24"
-                android:textColor="@color/dark_dark"
-                android:layout_marginEnd="10dp"
-                />
+        />
 
-            <Button
-                android:id="@+id/btn_replay_basquete"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="reset"
-                app:icon="@drawable/ic_baseline_refresh_24"
-                android:textColor="@color/dark_dark"
-                android:layout_marginStart="10dp"
-                />
+    <Button
+        android:id="@+id/btn1_basq_mais3"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:text="+3"
+        app:layout_constraintBottom_toBottomOf="@id/btn1_basq_mais2"
+        app:layout_constraintEnd_toEndOf="@id/img_basq_time1"
+        app:layout_constraintStart_toEndOf="@id/btn1_basq_mais2"
+
+        />
+
+    <TextView
+        android:id="@+id/text_basq_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Time 1"
+        android:textColor="@color/dark_dark"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/img_basq_time1"
+        app:layout_constraintStart_toStartOf="@id/img_basq_time1"
+        app:layout_constraintTop_toTopOf="@id/img_basq_time1" />
+
+    <TextView
+        android:id="@+id/basq1_menos1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@color/dark_dark"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@id/basq1_ponto"
+        app:layout_constraintEnd_toStartOf="@id/basq1_ponto"
+        app:layout_constraintStart_toStartOf="@id/img_basq_time1"
+
+        />
+
+    <TextView
+        android:id="@+id/basq1_ponto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/dark_dark"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@id/basq1_mais1"
+        app:layout_constraintStart_toEndOf="@id/basq1_menos1"
+        app:layout_constraintTop_toBottomOf="@id/text_basq_time1"
+        app:layout_constraintBottom_toTopOf="@id/btn1_basq_mais2"
 
 
-        </LinearLayout>
+        />
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/basq1_mais1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/dark_dark"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/basq1_ponto"
+        app:layout_constraintEnd_toEndOf="@id/img_basq_time1"
+        app:layout_constraintStart_toEndOf="@id/basq1_ponto"
+
+        />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_basq_time2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@color/dark_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/basq_center"
+
+        app:shapeAppearanceOverlay="@style/roundImageCorner" />
+
+    <Button
+        android:id="@+id/btn2_basq_mais2"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="+2"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/dark_dark"
+        app:layout_constraintBottom_toBottomOf="@id/img_basq_time2"
+        app:layout_constraintEnd_toStartOf="@id/btn2_basq_mais3"
+        app:layout_constraintStart_toStartOf="@id/img_basq_time2"
+
+        />
+
+    <Button
+        android:id="@+id/btn2_basq_mais3"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:text="+3"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/dark_dark"
+        app:layout_constraintBottom_toBottomOf="@id/btn2_basq_mais2"
+        app:layout_constraintEnd_toEndOf="@id/img_basq_time2"
+        app:layout_constraintStart_toEndOf="@id/btn2_basq_mais2"
+
+        />
+
+    <TextView
+        android:id="@+id/text_basq_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Time 2"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/img_basq_time2"
+        app:layout_constraintStart_toStartOf="@id/img_basq_time2"
+        app:layout_constraintTop_toTopOf="@id/img_basq_time2" />
+
+    <TextView
+        android:id="@+id/basq2_menos1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@id/basq2_ponto"
+        app:layout_constraintEnd_toStartOf="@id/basq2_ponto"
+        app:layout_constraintStart_toStartOf="@id/img_basq_time2"
+
+        />
+
+    <TextView
+        android:id="@+id/basq2_ponto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@id/basq2_mais1"
+        app:layout_constraintStart_toEndOf="@id/basq2_menos1"
+        app:layout_constraintTop_toBottomOf="@id/text_basq_time2"
+        app:layout_constraintBottom_toTopOf="@id/btn2_basq_mais2"
+
+
+        />
+
+    <TextView
+        android:id="@+id/basq2_mais1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/basq2_ponto"
+        app:layout_constraintEnd_toEndOf="@id/img_basq_time2"
+        app:layout_constraintStart_toEndOf="@id/basq2_ponto"
+
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/basq_center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/ligh_dark"
+        app:layout_constraintBottom_toTopOf="@id/img_basq_time2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_basq_time1"
+
+
+        app:shapeAppearanceOverlay="@style/roundImageCorner" />
+
+    <Button
+        android:id="@+id/btn_replay_basquete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/dark_dark"
+        app:icon="@drawable/ic_baseline_refresh_24"
+        app:iconGravity="top"
+        app:layout_constraintBottom_toBottomOf="@id/basq_center"
+        app:layout_constraintStart_toStartOf="@id/basq_center"
+        app:layout_constraintTop_toTopOf="@id/basq_center" />
+
+
+    <Chronometer
+        android:id="@+id/timerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_replay_basquete"
+        app:layout_constraintStart_toEndOf="@id/btn_replay_basquete"
+        app:layout_constraintTop_toTopOf="@id/btn_replay_basquete"
+
+
+        />
+
+    <Button
+        android:id="@+id/btn_start_basquete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/dark_dark"
+        app:icon="@drawable/ic_play"
+        app:iconGravity="top"
+        app:layout_constraintBottom_toBottomOf="@id/timerCount"
+        app:layout_constraintStart_toEndOf="@id/timerCount"
+        app:layout_constraintTop_toTopOf="@id/timerCount" />
+
+    <Button
+        android:id="@+id/btn_pause_basquete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/dark_dark"
+        app:icon="@drawable/ic_baseline_pause_24"
+        app:iconGravity="top"
+        app:layout_constraintBottom_toBottomOf="@id/btn_start_basquete"
+        app:layout_constraintStart_toEndOf="@id/btn_start_basquete"
+        app:layout_constraintTop_toTopOf="@id/btn_start_basquete" />
+
+    <Button
+        android:id="@+id/btn_zerar_basq"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Z"
+        android:textColor="@color/dark_dark"
+
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/basq_center"
+        app:layout_constraintEnd_toEndOf="@id/basq_center"
+        app:layout_constraintTop_toTopOf="@id/basq_center" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -83,7 +83,7 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/fut_center"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:background="@color/ligh_dark"
@@ -100,7 +100,7 @@
 
     <Button
         android:id="@+id/btn_reset_fut"
-        android:layout_width="40dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="5dp"
