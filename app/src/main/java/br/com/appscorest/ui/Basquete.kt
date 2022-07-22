@@ -13,7 +13,7 @@ class Basquete : AppCompatActivity() {
     private val binding by lazy {
         ActivityBasqueteBinding.inflate(layoutInflater)
     }
-    var pauseAt = 0L
+    private var pauseAt = 0L
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
