@@ -31,6 +31,7 @@
         app:layout_constraintBottom_toBottomOf="@id/img_basq_time1"
         app:layout_constraintEnd_toStartOf="@id/btn1_basq_mais3"
         app:layout_constraintStart_toStartOf="@id/img_basq_time1"
+        android:backgroundTint="@color/dark_dark"
 
         />
 
@@ -42,6 +43,7 @@
         app:layout_constraintBottom_toBottomOf="@id/btn1_basq_mais2"
         app:layout_constraintEnd_toEndOf="@id/img_basq_time1"
         app:layout_constraintStart_toEndOf="@id/btn1_basq_mais2"
+        android:backgroundTint="@color/dark_dark"
 
         />
 

@@ -88,7 +88,7 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
     <Button
         android:id="@+id/bnt_zerar_truco"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         app:layout_constraintStart_toStartOf="@id/img_truco_back1"
         app:layout_constraintEnd_toEndOf="@id/img_truco_back1"
         app:layout_constraintTop_toBottomOf="@id/img_truco_back1"
@@ -110,7 +110,7 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:text="Time 1"
         android:textColor="@color/white"
 
@@ -208,7 +208,7 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         app:layout_constraintTop_toTopOf="@id/img_truco_back2"
         app:layout_constraintStart_toStartOf="@id/img_truco_back2"
         app:layout_constraintEnd_toEndOf="@id/img_truco_back2"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         />
     <TextView
         android:id="@+id/truco_pnt_time1"
@@ -220,7 +220,7 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         app:layout_constraintTop_toBottomOf="@id/text_time1"
         app:layout_constraintStart_toStartOf="@id/img_truco_back1"
         app:layout_constraintEnd_toEndOf="@id/img_truco_back1"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         />
     <TextView
         android:id="@+id/truco_mais1pnt"
@@ -232,14 +232,14 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         app:layout_constraintEnd_toEndOf="@id/img_truco_back1"
         app:layout_constraintTop_toBottomOf="@id/text_time1"
         android:textColor="@color/white"
-        android:padding="20dp"
+        android:padding="15dp"
 
         />
     <TextView
         android:id="@+id/truco_menos1pnt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
+        android:textSize="45sp"
         android:text="-"
         android:textColor="@color/white"
         android:paddingStart="30dp"
@@ -262,7 +262,7 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         app:layout_constraintTop_toBottomOf="@id/text_time2"
         app:layout_constraintStart_toStartOf="@id/img_truco_back2"
         app:layout_constraintEnd_toEndOf="@id/img_truco_back2"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         />
 
     <TextView
@@ -275,14 +275,14 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         app:layout_constraintEnd_toEndOf="@id/img_truco_back2"
         app:layout_constraintTop_toBottomOf="@id/text_time2"
         android:textColor="@color/black"
-        android:padding="20dp"
+        android:padding="15dp"
 
         />
     <TextView
         android:id="@+id/truco_menos1pnt_time2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
+        android:textSize="45sp"
         android:text="-"
         android:textColor="@color/black"
         android:paddingStart="30dp"

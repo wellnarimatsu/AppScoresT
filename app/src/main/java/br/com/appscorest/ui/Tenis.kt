@@ -7,7 +7,7 @@ import br.com.appscorest.databinding.ActivityBasqueteBinding
 import br.com.appscorest.databinding.ActivityTenisBinding
 
 class Tenis : AppCompatActivity() {
-    private val binding by lazy{
+    private val binding by lazy {
         ActivityTenisBinding.inflate(layoutInflater)
 
     }
