@@ -201,7 +201,7 @@
             android:layout_marginTop="10dp"
 
             android:layout_marginRight="10dp"
-            android:background="@color/dark_dark"
+            android:background="@drawable/img_fundo_dado"
             android:elevation="15dp"
 
             android:scaleType="centerInside"
@@ -210,6 +210,7 @@
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/img_basquete"
+
 
             app:shapeAppearanceOverlay="@style/roundImageCorner" />
         <TextView
@@ -233,12 +234,25 @@
             app:layout_constraintStart_toStartOf="@id/img_futebol"
             app:layout_constraintTop_toBottomOf="@id/img_dado_digital"
             app:layout_constraintEnd_toStartOf="@id/img_mais_embreve"
-            android:background="@color/dark_dark"
+            android:background="@drawable/img_fundo_timer"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="10dp"
             app:shapeAppearanceOverlay="@style/roundImageCorner"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/img_timer"
+            app:layout_constraintBottom_toBottomOf="@id/img_timer"
+            android:text="Timer"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:elevation="15dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
             />
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -249,13 +263,23 @@
             app:layout_constraintStart_toEndOf="@id/img_timer"
             app:layout_constraintEnd_toEndOf="@id/img_futebol"
             app:layout_constraintTop_toBottomOf="@id/img_dado_digital"
-            android:background="@color/dark_dark"
+            android:background="@color/dark_background"
             android:layout_marginStart="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="10dp"
             app:shapeAppearanceOverlay="@style/roundImageCorner"
 
 />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            app:layout_constraintTop_toTopOf="@id/img_mais_embreve"
+            app:layout_constraintStart_toStartOf="@id/img_mais_embreve"
+            app:layout_constraintBottom_toBottomOf="@id/img_mais_embreve"
+            app:layout_constraintEnd_toEndOf="@id/img_mais_embreve"
+            android:textSize="80sp"
+            android:textColor="@color/white"/>
 
 
 
