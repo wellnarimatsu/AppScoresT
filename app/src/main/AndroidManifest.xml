@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppScoresT">
         <activity
-            android:name=".DadoDigital"
+            android:name=".ui.DadoDigital"
             android:exported="false" />
         <activity
             android:name=".ui.Truco"

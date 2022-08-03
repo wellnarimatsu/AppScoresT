@@ -1,4 +1,4 @@
-package br.com.appscorest
+package br.com.appscorest.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.os.SystemClock
 import androidx.appcompat.app.AppCompatActivity
 import br.com.appscorest.databinding.ActivityFutebolBinding
+import br.com.appscorest.extensions.FuncoesPlacar
+
 
 class Futebol : AppCompatActivity() {
     private val binding by lazy {
@@ -33,6 +35,7 @@ class Futebol : AppCompatActivity() {
         }
 
         binding.futMenos1.setOnClickListener {
+
 
 
             if (time1 >= 1) {

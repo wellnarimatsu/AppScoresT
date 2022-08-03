@@ -8,6 +8,9 @@ import br.com.appscorest.databinding.ActivityTrucoBinding
 
 class Truco : AppCompatActivity() {
 
+    var pontosTime1 = 0
+    var pontosTime2 = 0
+
     private val binding by lazy {
         ActivityTrucoBinding.inflate(layoutInflater)
 
@@ -16,18 +19,9 @@ class Truco : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        title="Truco"
+        title = "Truco"
 
-        var pntTime1 = 0
-        var pntTime2 = 0
 
-        fun zerarPlacar(){
-            pntTime1 = 0
-            pntTime2 = 0
-            binding.trucoPntTime1.text = pntTime1.toString()
-            binding.trucoPntTime2.text = pntTime2.toString()
-
-        }
 
         binding.bntZerarTruco.setOnClickListener {
             zerarPlacar()
@@ -38,37 +32,34 @@ class Truco : AppCompatActivity() {
 
 
         binding.trucoMais1pnt.setOnClickListener {
-            pntTime1 = pntTime1 + 1
-            binding.trucoPntTime1.text = pntTime1.toString()
+            somarPontosTime1(1)
+            binding.trucoPntTime1.text = pontosTime1.toString()
 
         }
 
         binding.trucoMenos1pnt.setOnClickListener {
-
-            if (pntTime1 >= 1) {
-                pntTime1 = pntTime1 - 1
-                binding.trucoPntTime1.text = pntTime1.toString()
-            }
+            subtrairPontosTime1(1)
+            binding.trucoPntTime1.text = pontosTime1.toString()
         }
 
         binding.btn3trucoTime1.setOnClickListener {
-            pntTime1 = pntTime1 +3
-            binding.trucoPntTime1.text = pntTime1.toString()
+            somarPontosTime1(3)
+            binding.trucoPntTime1.text = pontosTime1.toString()
 
         }
 
         binding.btn6trucoTime1.setOnClickListener {
-            pntTime1 = pntTime1 + 6
-            binding.trucoPntTime1.text = pntTime1.toString()
+            somarPontosTime1(6)
+            binding.trucoPntTime1.text = pontosTime1.toString()
         }
 
         binding.btn9trucoTime1.setOnClickListener {
-            pntTime1 = pntTime1 + 9
-            binding.trucoPntTime1.text = pntTime1.toString()
+            somarPontosTime1(9)
+            binding.trucoPntTime1.text = pontosTime1.toString()
         }
         binding.btn12trucoTime1.setOnClickListener {
-            pntTime1 = pntTime1 + 12
-            binding.trucoPntTime1.text = pntTime1.toString()
+            somarPontosTime1(12)
+            binding.trucoPntTime1.text = pontosTime1.toString()
         }
 
 
@@ -76,35 +67,76 @@ class Truco : AppCompatActivity() {
 
         binding.trucoMais1pntTime2.setOnClickListener {
 
-            pntTime2 = pntTime2 + 1
-            binding.trucoPntTime2.text = pntTime2.toString()
+            somarPontosTime2(1)
+            binding.trucoPntTime2.text = pontosTime2.toString()
         }
 
         binding.trucoMenos1pntTime2.setOnClickListener {
-            if (pntTime2 >= 1) {
-                pntTime2 = pntTime2 - 1
-                binding.trucoPntTime2.text = pntTime2.toString()
-            }
+            subtrairPontosTime2(1)
+            binding.trucoPntTime2.text = pontosTime2.toString()
         }
 
         binding.btn3trucoTime2.setOnClickListener {
-            pntTime2 = pntTime2 +3
-            binding.trucoPntTime2.text = pntTime2.toString()
-
+            somarPontosTime2(3)
+            binding.trucoPntTime2.text = pontosTime2.toString()
         }
 
         binding.btn6trucoTime2.setOnClickListener {
-            pntTime2 = pntTime2 + 6
-            binding.trucoPntTime2.text = pntTime2.toString()
+            somarPontosTime2(6)
+            binding.trucoPntTime2.text = pontosTime2.toString()
         }
 
         binding.btn9trucoTime2.setOnClickListener {
-            pntTime2 = pntTime2 + 9
-            binding.trucoPntTime2.text = pntTime2.toString()
+            somarPontosTime2(9)
+            binding.trucoPntTime2.text = pontosTime2.toString()
         }
         binding.btn12trucoTime2.setOnClickListener {
-            pntTime2 = pntTime2 + 12
-            binding.trucoPntTime2.text = pntTime2.toString()
+            somarPontosTime2(12)
+            binding.trucoPntTime2.text = pontosTime2.toString()
+        }
+
+
+    }
+
+     fun somarPontosTime1(qnt: Int) {
+
+        pontosTime1 = pontosTime1 + qnt
+
+
+    }
+
+     fun subtrairPontosTime1(menos1: Int = 1) {
+
+        if (pontosTime1 >= 1) {
+            pontosTime1 = pontosTime1 - menos1
+
+
         }
     }
+
+    fun somarPontosTime2(qnt: Int) {
+
+        pontosTime2 = pontosTime2 + qnt
+
+
+
+    }
+
+     fun subtrairPontosTime2(menos1: Int = 1) {
+
+        if (pontosTime2 >= 1) {
+            pontosTime2 = pontosTime2 - menos1
+
+
+        }
+    }
+
+    fun zerarPlacar() {
+        var pontosTime1 = 0
+        var pontosTime2 = 0
+        binding.trucoPntTime1.text = pontosTime1.toString()
+        binding.trucoPntTime2.text = pontosTime2.toString()
+
+    }
 }
+
