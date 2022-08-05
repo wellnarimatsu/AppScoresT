@@ -2,7 +2,6 @@ package br.com.appscorest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import br.com.appscorest.databinding.ActivityFutebolBinding
 import br.com.appscorest.databinding.ActivityMainBinding
 import br.com.appscorest.extensions.vaiPara
 import br.com.appscorest.ui.*
@@ -39,6 +38,13 @@ class MainActivity : AppCompatActivity() {
 
         binding.imgTruco.setOnClickListener{
             vaiPara(Truco::class.java)
+        }
+        binding.imgDadoDigital.setOnClickListener {
+            vaiPara(DadoDigital::class.java)
+        }
+
+        binding.imgTimer.setOnClickListener {
+            vaiPara(SimpleTimer::class.java)
         }
 
 

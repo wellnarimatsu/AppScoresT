@@ -4,6 +4,136 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.DadoDigital">
+    tools:context=".ui.DadoDigital"
+    android:backgroundTint="@color/ligh_grey"
+    android:background="@color/white">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgback_dado1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/dado_zerar"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundImageCorner" />
+
+    <TextView
+        android:id="@+id/text_dado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dado 1"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="@id/imgback_dado1"
+        app:layout_constraintStart_toStartOf="@id/imgback_dado1"
+        app:layout_constraintEnd_toEndOf="@id/imgback_dado1"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/valor_dado1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="42sp"
+        app:layout_constraintTop_toBottomOf="@id/text_dado1"
+        app:layout_constraintStart_toStartOf="@id/imgback_dado1"
+        app:layout_constraintEnd_toEndOf="@id/imgback_dado1"
+        app:layout_constraintBottom_toTopOf="@id/btn_dado1"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_dado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Girar"
+        app:layout_constraintTop_toBottomOf="@id/valor_dado1"
+        app:layout_constraintBottom_toBottomOf="@id/imgback_dado1"
+        app:layout_constraintEnd_toEndOf="@id/imgback_dado1"
+        app:layout_constraintStart_toStartOf="@id/imgback_dado1"/>
+
+    <Button
+        android:id="@+id/dado_zerar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="@id/imgback_dado1"
+        app:layout_constraintEnd_toEndOf="@id/imgback_dado1"
+        app:layout_constraintTop_toBottomOf="@id/imgback_dado1"
+        app:layout_constraintBottom_toTopOf="@id/imgback_dado2"
+        android:backgroundTint="@color/ligh_dark"
+        android:text="Zerar Pontos"
+
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+        app:shapeAppearanceOverlay="@style/roundImageCorner"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+<!--    layout dado 2-->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgback_dado2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@color/dark_dark"
+        app:layout_constraintTop_toBottomOf="@id/dado_zerar"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:shapeAppearanceOverlay="@style/roundImageCorner" />
+    <TextView
+        android:id="@+id/text_dado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dado 2"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="@id/imgback_dado2"
+        app:layout_constraintStart_toStartOf="@id/imgback_dado2"
+        app:layout_constraintEnd_toEndOf="@id/imgback_dado2"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/valor_dado2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        app:layout_constraintTop_toBottomOf="@id/text_dado2"
+        app:layout_constraintStart_toStartOf="@id/imgback_dado2"
+        app:layout_constraintEnd_toEndOf="@id/imgback_dado2"
+        app:layout_constraintBottom_toTopOf="@id/btn_dado2"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_dado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Girar"
+        app:layout_constraintTop_toBottomOf="@id/valor_dado2"
+        app:layout_constraintBottom_toBottomOf="@id/imgback_dado2"
+        app:layout_constraintEnd_toEndOf="@id/imgback_dado2"
+        app:layout_constraintStart_toStartOf="@id/imgback_dado2"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

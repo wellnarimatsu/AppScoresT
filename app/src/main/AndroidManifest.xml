@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppScoresT">
         <activity
+            android:name=".ui.SimpleTimer"
+            android:exported="false" />
+        <activity
             android:name=".ui.DadoDigital"
             android:exported="false" />
         <activity

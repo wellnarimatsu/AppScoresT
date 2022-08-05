@@ -16,7 +16,7 @@
         android:layout_height="0dp"
         android:layout_margin="10dp"
         android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/fut_center"
+        app:layout_constraintBottom_toTopOf="@id/dado_zerar"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +81,7 @@
 
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/fut_center"
+        android:id="@+id/dado_zerar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginStart="10dp"
@@ -111,11 +111,11 @@
 
 
 
-        app:layout_constraintBottom_toBottomOf="@id/fut_center"
+        app:layout_constraintBottom_toBottomOf="@id/dado_zerar"
         app:layout_constraintEnd_toStartOf="@id/chronometer_fut"
 
-        app:layout_constraintStart_toStartOf="@id/fut_center"
-        app:layout_constraintTop_toTopOf="@id/fut_center" />
+        app:layout_constraintStart_toStartOf="@id/dado_zerar"
+        app:layout_constraintTop_toTopOf="@id/dado_zerar" />
 
     <Button
         android:id="@+id/btn_play_fut"
@@ -177,10 +177,10 @@
         android:id="@+id/btn_zerar_fut"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@id/fut_center"
+        app:layout_constraintEnd_toEndOf="@id/dado_zerar"
 
-        app:layout_constraintTop_toTopOf="@id/fut_center"
-        app:layout_constraintBottom_toBottomOf="@id/fut_center"
+        app:layout_constraintTop_toTopOf="@id/dado_zerar"
+        app:layout_constraintBottom_toBottomOf="@id/dado_zerar"
         android:text="Z"
         android:textSize="25sp"
         android:textColor="@color/ligh_dark"
@@ -198,7 +198,7 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fut_center"
+        app:layout_constraintTop_toBottomOf="@id/dado_zerar"
         app:shapeAppearanceOverlay="@style/roundImageCorner" />
     <TextView
         android:id="@+id/fut_text_time2"
