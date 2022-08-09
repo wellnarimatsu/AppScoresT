@@ -51,8 +51,8 @@ class Volei : AppCompatActivity() {
             pntTime1++
             binding.pontuacaoVoleiTime1.text = pntTime1.toString()
 
-            binding.vezTime1.visibility = View.VISIBLE
-            binding.vezTime2.visibility = View.GONE
+//            binding.vezTime1.visibility = View.VISIBLE
+//            binding.vezTime2.visibility = View.GONE
             verificarSet()
         }
 
@@ -61,8 +61,8 @@ class Volei : AppCompatActivity() {
             pntTime2++
             binding.pontuacaoVoleiTime2.text = pntTime2.toString()
 
-            binding.vezTime2.visibility = View.VISIBLE
-            binding.vezTime1.visibility = View.GONE
+//            binding.vezTime2.visibility = View.VISIBLE
+//            binding.vezTime1.visibility = View.GONE
             verificarSet()
 
         }

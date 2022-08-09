@@ -9,6 +9,7 @@
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.129" />
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/drawable/ic_play.xml" value="0.129" />
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/drawable/img_shape.xml" value="0.1815" />
+        <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/drawable/img_shape_white.xml" value="0.111" />
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/drawable/round_image_corner.xml" value="0.1755" />
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_basquete.xml" value="0.2" />
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_dado_digital.xml" value="0.16" />
@@ -18,7 +19,7 @@
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_taco.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_tenis.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_truco.xml" value="0.2" />
-        <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_volei.xml" value="0.2" />
+        <entry key="..\:/Users/welli/Downloads/AppScoresT/app/src/main/res/layout/activity_volei.xml" value="0.9" />
       </map>
     </option>
   </component>

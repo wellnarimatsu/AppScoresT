@@ -42,9 +42,9 @@ class FuncoesPlacar() {
     }
 
     fun zerarPlacar() {
-        var pontosTime1 = 0
-        var pontosTime2 = 0
-//        binding.trucoPntTime1.text = pontosTime1.toString()
+//        var pontosTime1 = 0
+//        var pontosTime2 = 0
+//       binding.trucoPntTime1.text = pontosTime1.toString()
 //        binding.trucoPntTime2.text = pontosTime2.toString()
 
     }
