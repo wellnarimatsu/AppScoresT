@@ -14,6 +14,8 @@ class SimpleTimer : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_simple_timer)
 
+        title="Timer"
+
 
 
 

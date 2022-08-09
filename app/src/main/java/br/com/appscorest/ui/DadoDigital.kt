@@ -16,6 +16,7 @@ class DadoDigital : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        title="Dado Digital"
 
 
 

@@ -25,6 +25,7 @@ class Basquete : AppCompatActivity() {
 
         cronometroBasquete()
         zerarBasq()
+        title="Basquete"
 
         //Placar time 1
 

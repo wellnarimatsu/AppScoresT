@@ -24,7 +24,10 @@ class Truco : AppCompatActivity() {
 
 
         binding.bntZerarTruco.setOnClickListener {
-            zerarPlacar()
+             pontosTime1 = 0
+             pontosTime2 = 0
+            binding.trucoPntTime1.text = pontosTime1.toString()
+            binding.trucoPntTime2.text = pontosTime2.toString()
         }
 
 
@@ -131,12 +134,12 @@ class Truco : AppCompatActivity() {
         }
     }
 
-    fun zerarPlacar() {
-        var pontosTime1 = 0
-        var pontosTime2 = 0
-        binding.trucoPntTime1.text = pontosTime1.toString()
-        binding.trucoPntTime2.text = pontosTime2.toString()
-
-    }
+//    fun zerarPlacar() {
+//        var pontosTime1 = 0
+//        var pontosTime2 = 0
+//        binding.trucoPntTime1.text = pontosTime1.toString()
+//        binding.trucoPntTime2.text = pontosTime2.toString()
+//
+//    }
 }
 

@@ -12,42 +12,29 @@ class Volei : AppCompatActivity() {
         ActivityVoleiBinding.inflate(layoutInflater)
 
     }
+    var pntTime1 = 0
+    var pntTime2 = 0
+
+    var setTime1 = 0
+    var setTime2 = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        title="Volei"
 
+        // BTN ZERAR TUDO
 
-        var pntTime1 = 0
-        var pntTime2 = 0
-
-        var setTime1 = 0
-        var setTime2 = 0
-
-        fun zeraPlacar(){
-            pntTime1 = 0
-            pntTime2 = 0
-
-            binding.pontuacaoVoleiTime1.text = pntTime1.toString()
-            binding.pontuacaoVoleiTime2.text = pntTime2.toString()
+        binding.voleyZerar.setOnClickListener {
+            zerarTudo()
         }
 
-        fun verificarSet() {
-            if (pntTime1 >= 25 || pntTime2 >= 25) {
-                if (pntTime1 - pntTime2 >= 2) {
-                    setTime1++
-                    binding.setTime1.text = setTime1.toString()
-                    zeraPlacar()
 
-                } else if (pntTime2 - pntTime1 >= 2) {
-                    setTime2++
-                    binding.setTime2.text = setTime2.toString()
-                    zeraPlacar()
-                }
-            }
-        }
 
-        binding.pontuacaoVoleiTime1.setOnClickListener {
+        // PLACAR TIME 1
+
+
+        binding.mais1VoleiTime1.setOnClickListener {
             pntTime1++
             binding.pontuacaoVoleiTime1.text = pntTime1.toString()
 
@@ -56,7 +43,20 @@ class Volei : AppCompatActivity() {
             verificarSet()
         }
 
-        binding.pontuacaoVoleiTime2.setOnClickListener {
+        binding.menos1VoleiTime1.setOnClickListener {
+            if (pntTime1 >= 0) {
+
+                pntTime1--
+                binding.pontuacaoVoleiTime1.text = pntTime1.toString()
+            }
+
+        }
+
+
+//         PLACAR TIME 2
+
+
+        binding.mais1VoleiTime2.setOnClickListener {
 
             pntTime2++
             binding.pontuacaoVoleiTime2.text = pntTime2.toString()
@@ -67,7 +67,52 @@ class Volei : AppCompatActivity() {
 
         }
 
+        binding.menos1VoleiTime2.setOnClickListener {
 
+            if (pntTime2 >= 1) {
+
+                pntTime2--
+                binding.pontuacaoVoleiTime2.text = pntTime2.toString()
+            }
+        }
+
+
+    }
+
+    fun zeraPlacar() {
+        pntTime1 = 0
+        pntTime2 = 0
+
+        binding.pontuacaoVoleiTime1.text = pntTime1.toString()
+        binding.pontuacaoVoleiTime2.text = pntTime2.toString()
+    }
+
+    fun verificarSet() {
+        if (pntTime1 >= 25 || pntTime2 >= 25) {
+            if (pntTime1 - pntTime2 >= 2) {
+                setTime1++
+                binding.setTime1.text = setTime1.toString()
+                zeraPlacar()
+
+            } else if (pntTime2 - pntTime1 >= 2) {
+                setTime2++
+                binding.setTime2.text = setTime2.toString()
+                zeraPlacar()
+            }
+        }
+    }
+
+    fun zerarTudo() {
+
+        pntTime1 = 0
+        pntTime2 = 0
+        setTime1 = 0
+        setTime2 = 0
+
+        binding.pontuacaoVoleiTime1.text = pntTime1.toString()
+        binding.pontuacaoVoleiTime2.text = pntTime2.toString()
+        binding.setTime1.text = setTime1.toString()
+        binding.setTime2.text = setTime2.toString()
 
 
     }

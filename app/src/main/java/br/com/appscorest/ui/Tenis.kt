@@ -14,5 +14,8 @@ class Tenis : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        title="Tênis"
+
     }
 }

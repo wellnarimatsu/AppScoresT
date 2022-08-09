@@ -5,6 +5,7 @@ import android.os.Bundle
 import br.com.appscorest.databinding.ActivityMainBinding
 import br.com.appscorest.extensions.vaiPara
 import br.com.appscorest.ui.*
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,6 +46,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.imgTimer.setOnClickListener {
             vaiPara(SimpleTimer::class.java)
+        }
+        binding.imgMaisEmbreve.setOnClickListener {
+            Snackbar.make(it,"Em Breve Novas Funcionalidades", Snackbar.LENGTH_LONG).show()
+
         }
 
 

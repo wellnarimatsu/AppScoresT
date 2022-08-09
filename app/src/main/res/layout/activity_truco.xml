@@ -100,8 +100,7 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         android:textSize="15sp"
 
         app:shapeAppearanceOverlay="@style/roundImageCorner"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+
         />
 
 
@@ -215,24 +214,26 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/text_time1"
         app:layout_constraintStart_toStartOf="@id/img_truco_back1"
         app:layout_constraintEnd_toEndOf="@id/img_truco_back1"
         android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_3truco_time1"
         />
     <TextView
         android:id="@+id/truco_mais1pnt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+"
-        android:textSize="30sp"
+        android:textSize="35sp"
         app:layout_constraintStart_toEndOf="@id/truco_pnt_time1"
         app:layout_constraintEnd_toEndOf="@id/img_truco_back1"
-        app:layout_constraintTop_toBottomOf="@id/text_time1"
+        app:layout_constraintTop_toTopOf="@id/truco_pnt_time1"
         android:textColor="@color/white"
         android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/truco_pnt_time1"
 
         />
     <TextView
@@ -244,9 +245,10 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         android:textColor="@color/white"
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/truco_pnt_time1"
 
         app:layout_constraintStart_toStartOf="@id/img_truco_back1"
-        app:layout_constraintTop_toBottomOf="@id/text_time1"
+        app:layout_constraintTop_toTopOf="@id/truco_pnt_time1"
         app:layout_constraintEnd_toStartOf="@id/truco_pnt_time1"/>
 
 
@@ -257,12 +259,13 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/text_time2"
         app:layout_constraintStart_toStartOf="@id/img_truco_back2"
         app:layout_constraintEnd_toEndOf="@id/img_truco_back2"
         android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_3truco_time2"
         />
 
     <TextView
@@ -270,12 +273,13 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+"
-        android:textSize="30sp"
+        android:textSize="35sp"
         app:layout_constraintStart_toEndOf="@id/truco_pnt_time2"
         app:layout_constraintEnd_toEndOf="@id/img_truco_back2"
-        app:layout_constraintTop_toBottomOf="@id/text_time2"
+        app:layout_constraintTop_toTopOf="@id/truco_pnt_time2"
         android:textColor="@color/black"
         android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/truco_pnt_time2"
 
         />
     <TextView
@@ -287,9 +291,10 @@ app:layout_constraintEnd_toStartOf="@id/btn_12truco_time1"
         android:textColor="@color/black"
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/truco_pnt_time2"
 
         app:layout_constraintStart_toStartOf="@id/img_truco_back2"
-        app:layout_constraintTop_toBottomOf="@id/text_time2"
+        app:layout_constraintTop_toTopOf="@id/truco_pnt_time2"
         app:layout_constraintEnd_toStartOf="@id/truco_pnt_time2"/>
 
 

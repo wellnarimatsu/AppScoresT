@@ -74,9 +74,8 @@
         android:textColor="@color/white"
         android:textSize="15sp"
 
-        app:shapeAppearanceOverlay="@style/roundImageCorner"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+        android:background="@drawable/img_shape"
+
         />
 
 <!--    layout dado 2-->
