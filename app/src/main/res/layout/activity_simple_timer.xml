@@ -6,4 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".ui.SimpleTimer">
 
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgBack_Timer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:shapeAppearanceOverlay="@style/roundImageCorner"
+        android:background="@color/dark_dark"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn_reset_timer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginEnd="10dp"
+
+        android:backgroundTint="@color/ligh_grey"
+        app:icon="@drawable/ic_baseline_refresh_24"
+        app:iconGravity="top"
+
+        app:layout_constraintEnd_toStartOf="@id/btn_play_timer"
+        app:layout_constraintTop_toTopOf="@id/btn_play_timer"
+
+
+
+         />
+
+    <Button
+        android:id="@+id/btn_play_timer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:iconGravity="top"
+        app:icon="@drawable/ic_play"
+        android:backgroundTint="@color/ligh_grey"
+        android:layout_marginTop="15dp"
+
+
+        app:layout_constraintEnd_toEndOf="@id/chronometer_simpleTimer"
+        app:layout_constraintStart_toStartOf="@id/chronometer_simpleTimer"
+        app:layout_constraintTop_toBottomOf="@id/chronometer_simpleTimer"
+
+        />
+
+    <Button
+        android:id="@+id/btn_pause_timer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:icon="@drawable/ic_baseline_pause_24"
+        android:backgroundTint="@color/ligh_grey"
+        android:layout_marginStart="10dp"
+        app:iconGravity="top"
+        app:layout_constraintStart_toEndOf="@id/btn_play_timer"
+        app:layout_constraintBottom_toBottomOf="@id/btn_reset_timer"
+        app:layout_constraintTop_toTopOf="@id/btn_reset_timer"
+
+
+
+        />
+
+
+
+
+
+    <Chronometer
+        android:id="@+id/chronometer_simpleTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/imgBack_Timer"
+        app:layout_constraintEnd_toEndOf="@id/imgBack_Timer"
+        app:layout_constraintTop_toTopOf="@id/imgBack_Timer"
+        app:layout_constraintBottom_toBottomOf="@id/imgBack_Timer"
+        android:background="@drawable/img_shape"
+
+
+
+
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
