@@ -177,16 +177,16 @@
         android:id="@+id/btn_zerar_fut"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+
+        android:backgroundTint="@color/white"
+        android:text="Z"
+        android:textColor="@color/ligh_dark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/dado_zerar"
         app:layout_constraintEnd_toEndOf="@id/dado_zerar"
 
-        app:layout_constraintTop_toTopOf="@id/dado_zerar"
-        app:layout_constraintBottom_toBottomOf="@id/dado_zerar"
-        android:text="Z"
-        android:textSize="25sp"
-        android:textColor="@color/ligh_dark"
-        android:backgroundTint="@color/white"
-        android:layout_marginEnd="15dp"
-        />
+        app:layout_constraintTop_toTopOf="@id/dado_zerar" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imgback_time2"

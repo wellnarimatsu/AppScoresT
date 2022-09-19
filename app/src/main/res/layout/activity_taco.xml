@@ -12,28 +12,72 @@
         android:id="@+id/imgBack_taco1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/taco_center"
         android:layout_margin="10dp"
-        app:shapeAppearanceOverlay="@style/roundImageCorner"
         android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/taco_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
 
-        />
+        app:shapeAppearanceOverlay="@style/roundImageCorner" />
 
     <TextView
         android:id="@+id/text_taco_time1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Time 1"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textColor="@color/dark_dark"
         app:layout_constraintTop_toTopOf="@id/imgBack_taco1"
         app:layout_constraintEnd_toEndOf="@id/imgBack_taco1"
         app:layout_constraintStart_toStartOf="@id/imgBack_taco1"
         android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/taco_menos_time1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textColor="@color/dark_dark"
+        app:layout_constraintStart_toStartOf="@id/imgBack_taco1"
+        app:layout_constraintTop_toTopOf="@id/taco_pnt_time1"
+        app:layout_constraintEnd_toStartOf="@id/taco_pnt_time1"
+
+        />
+    <TextView
+        android:id="@+id/taco_pnt_time1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40sp"
+        android:textColor="@color/dark_dark"
+
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/text_taco_time1"
+        app:layout_constraintEnd_toStartOf="@id/taco_mais_time1"
+        app:layout_constraintStart_toEndOf="@id/taco_menos_time1"
+        app:layout_constraintBottom_toBottomOf="@id/imgBack_taco1"
+
+
+
+        />
+    <TextView
+        android:id="@+id/taco_mais_time1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textColor="@color/dark_dark"
+        app:layout_constraintEnd_toEndOf="@id/imgBack_taco1"
+        app:layout_constraintTop_toTopOf="@id/taco_pnt_time1"
+        app:layout_constraintStart_toEndOf="@id/taco_pnt_time1"
+
         />
     <Button
         android:id="@+id/taco_center"
@@ -69,12 +113,55 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Time 2"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@id/imgBack_taco2"
         app:layout_constraintEnd_toEndOf="@id/imgBack_taco2"
         app:layout_constraintStart_toStartOf="@id/imgBack_taco2"
         android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/taco_menos_time2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/imgBack_taco2"
+        app:layout_constraintTop_toTopOf="@id/taco_pnt_time2"
+        app:layout_constraintEnd_toStartOf="@id/taco_pnt_time2"
+
+        />
+    <TextView
+        android:id="@+id/taco_pnt_time2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/text_taco_time2"
+        app:layout_constraintEnd_toStartOf="@id/taco_mais_time2"
+        app:layout_constraintStart_toEndOf="@id/taco_menos_time2"
+        app:layout_constraintBottom_toBottomOf="@id/imgBack_taco2"
+
+
+
+        />
+    <TextView
+        android:id="@+id/taco_mais_time2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/imgBack_taco2"
+        app:layout_constraintTop_toTopOf="@id/taco_pnt_time2"
+        app:layout_constraintStart_toEndOf="@id/taco_pnt_time2"
+
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,21 +8,20 @@
     android:background="@color/ligh_grey">
 
 
-
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imgBack_tenis1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tenis_center"
         android:layout_margin="10dp"
-        app:shapeAppearanceOverlay="@style/roundImageCorner"
         android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/tenis_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
 
-        />
+        app:shapeAppearanceOverlay="@style/roundImageCorner" />
 
     <TextView
         android:id="@+id/text_tenis_time1"
@@ -36,6 +35,109 @@
         app:layout_constraintStart_toStartOf="@id/imgBack_tenis1"
         android:layout_marginTop="5dp"
         />
+
+    <TextView
+        android:id="@+id/tenis_menos_time1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textColor="@color/dark_dark"
+        app:layout_constraintStart_toStartOf="@id/imgBack_tenis1"
+        app:layout_constraintEnd_toStartOf="@id/tenis_pnt_time1"
+        app:layout_constraintTop_toTopOf="@id/tenis_pnt_time1"
+        />
+    <TextView
+        android:id="@+id/tenis_pnt_time1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40sp"
+        android:textColor="@color/dark_dark"
+        app:layout_constraintTop_toBottomOf="@id/text_tenis_time1"
+        app:layout_constraintStart_toEndOf="@id/tenis_menos_time1"
+        app:layout_constraintEnd_toStartOf="@id/tenis_mais_time1"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/text_game_time1"
+
+
+        />
+    <TextView
+        android:id="@+id/tenis_mais_time1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textColor="@color/dark_dark"
+        app:layout_constraintEnd_toEndOf="@id/imgBack_tenis1"
+        app:layout_constraintStart_toEndOf="@id/tenis_pnt_time1"
+        app:layout_constraintTop_toTopOf="@id/tenis_pnt_time1"
+
+        />
+
+    <TextView
+        android:id="@+id/text_game_time1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/dark_dark"
+        android:text="Game"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/imgBack_tenis1"
+        app:layout_constraintEnd_toStartOf="@id/text_tenis_set_time1"
+        app:layout_constraintTop_toBottomOf="@id/tenis_pnt_time1"
+        app:layout_constraintBottom_toTopOf="@id/game_time1"
+
+
+        />
+
+    <TextView
+        android:id="@+id/game_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25sp"
+        android:textColor="@color/dark_dark"
+        app:layout_constraintTop_toBottomOf="@id/text_game_time1"
+        app:layout_constraintStart_toStartOf="@id/text_game_time1"
+        app:layout_constraintEnd_toEndOf="@id/text_game_time1"
+        app:layout_constraintBottom_toBottomOf="@id/imgBack_tenis1"
+
+       />
+
+
+
+    <TextView
+        android:id="@+id/text_tenis_set_time1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/dark_dark"
+        android:text="Set"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/imgBack_tenis1"
+        app:layout_constraintStart_toEndOf="@id/text_game_time1"
+        app:layout_constraintTop_toBottomOf="@id/tenis_pnt_time1"
+        app:layout_constraintBottom_toTopOf="@id/tenis_set_time1"
+        />
+    <TextView
+        android:id="@+id/tenis_set_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/text_tenis_set_time1"
+        app:layout_constraintStart_toStartOf="@id/text_tenis_set_time1"
+        app:layout_constraintEnd_toEndOf="@id/text_tenis_set_time1"
+        android:textSize="25sp"
+        android:textColor="@color/dark_dark"
+        app:layout_constraintBottom_toBottomOf="@id/imgBack_tenis1"
+        />
+
+
+
+
     <Button
         android:id="@+id/tenis_center"
         android:layout_width="0dp"
@@ -65,6 +167,8 @@
 
         />
 
+
+
     <TextView
         android:id="@+id/text_tenis_time2"
         android:layout_width="wrap_content"
@@ -77,5 +181,106 @@
         app:layout_constraintStart_toStartOf="@id/imgBack_tenis2"
         android:layout_marginTop="5dp"
         />
+
+    <TextView
+        android:id="@+id/tenis_menos_time2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/imgBack_tenis2"
+        app:layout_constraintEnd_toStartOf="@id/tenis_pnt_time2"
+        app:layout_constraintTop_toTopOf="@id/tenis_pnt_time2"
+        />
+    <TextView
+        android:id="@+id/tenis_pnt_time2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/text_tenis_time2"
+        app:layout_constraintStart_toEndOf="@id/tenis_menos_time2"
+        app:layout_constraintEnd_toStartOf="@id/tenis_mais_time2"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/text_game_time2"
+
+
+        />
+    <TextView
+        android:id="@+id/tenis_mais_time2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/imgBack_tenis2"
+        app:layout_constraintStart_toEndOf="@id/tenis_pnt_time2"
+        app:layout_constraintTop_toTopOf="@id/tenis_pnt_time2"
+
+        />
+
+    <TextView
+        android:id="@+id/text_game_time2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="Game"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/imgBack_tenis2"
+        app:layout_constraintEnd_toStartOf="@id/text_tenis_set_time2"
+        app:layout_constraintTop_toBottomOf="@id/tenis_pnt_time2"
+        app:layout_constraintBottom_toTopOf="@id/game_time2"
+
+
+        />
+
+    <TextView
+        android:id="@+id/game_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/text_game_time2"
+        app:layout_constraintStart_toStartOf="@id/text_game_time2"
+        app:layout_constraintEnd_toEndOf="@id/text_game_time2"
+        app:layout_constraintBottom_toBottomOf="@id/imgBack_tenis2"
+        />
+
+
+
+    <TextView
+        android:id="@+id/text_tenis_set_time2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="Set"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/imgBack_tenis2"
+        app:layout_constraintStart_toEndOf="@id/text_game_time2"
+        app:layout_constraintTop_toBottomOf="@id/tenis_pnt_time2"
+        app:layout_constraintBottom_toTopOf="@id/tenis_set_time2"
+        />
+    <TextView
+        android:id="@+id/tenis_set_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/text_tenis_set_time2"
+        app:layout_constraintStart_toStartOf="@id/text_tenis_set_time2"
+        app:layout_constraintEnd_toEndOf="@id/text_tenis_set_time2"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/imgBack_tenis2"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

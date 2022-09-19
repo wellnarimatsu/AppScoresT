@@ -78,7 +78,6 @@
         android:textColor="@color/dark_dark"
         android:textSize="45sp"
         app:layout_constraintTop_toTopOf="@id/pontuacao_volei_time1"
-        tools:layout_editor_absoluteX="193dp"
         app:layout_constraintStart_toEndOf="@id/pontuacao_volei_time1"
         app:layout_constraintEnd_toEndOf="@id/imgback_voley_time1"
         />
