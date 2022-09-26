@@ -8,12 +8,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
     <color name="dark_background">#3D3D3D</color>
-    <color name="vermelho_time2">#FF1616</color>
+    <color name="light_red">#FF5757</color>
     <color name="azul_time1">#2E53FD</color>
     <color name="ligh_grey">#A6A6A6</color>
 
     <color name="dark_dark">#423E3E</color>
     <color name="ligh_dark">#323232</color>
+
+    <color name="red">#FF1616</color>
 
 
 </resources>

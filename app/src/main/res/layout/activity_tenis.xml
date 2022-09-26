@@ -63,6 +63,19 @@
 
 
         />
+
+    <TextView
+        android:id="@+id/melhor2_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:padding="4dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/tenis_pnt_time1"
+        app:layout_constraintTop_toTopOf="@+id/tenis_pnt_time1" />
+
     <TextView
         android:id="@+id/tenis_mais_time1"
         android:layout_width="0dp"
@@ -209,6 +222,20 @@
 
 
         />
+
+    <TextView
+        android:id="@+id/melhor2_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/light_red"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/tenis_pnt_time2"
+        app:layout_constraintTop_toTopOf="@+id/tenis_pnt_time2"/>
     <TextView
         android:id="@+id/tenis_mais_time2"
         android:layout_width="0dp"
