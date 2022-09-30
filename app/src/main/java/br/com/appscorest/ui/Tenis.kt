@@ -31,9 +31,89 @@ class Tenis : AppCompatActivity() {
         title = "Tênis"
 
         //PLACAR TIME 1
-        while (gameTime1 >=0 || gameTime1 <=6 || gameTime2>=0 || gameTime2<=6){
-            placarTime1()
-            placarTime2()
+
+        if (pntTime1 == 0 || gameTime1 == 0) {
+
+            binding.tenisMaisTime1.setOnClickListener {
+
+
+                pntTime1 += 15
+                binding.tenisPntTime1.text = pntTime1.toString()
+                if (pntTime1 > 30) {
+                    pntTime1 = 40
+                    binding.tenisPntTime1.text = pntTime1.toString()
+
+
+                }
+
+
+                if (pntTime1 == 40 && pntTime2 == 40) {
+                    binding.tenisMaisTime1.setOnClickListener {
+
+                        melhor2_time1++
+                        binding.melhor2Time1.text = melhor2_time1.toString()
+
+                        if (melhor2_time1 - melhor2_time2 >= 2) {
+                            gameTime1++
+                            binding.gameTime1.text = gameTime1.toString()
+                            zerarPontos()
+
+
+                        } else if (melhor2_time2 - melhor2_time1 >= 2) {
+                            gameTime2++
+                            binding.gameTime2.text = gameTime2.toString()
+                            zerarPontos()
+
+
+                        }
+
+
+                    }
+
+
+                } else if (pntTime1 > 40 || pntTime2 > 40) {
+                    if (pntTime1 - pntTime2 >= 2) {
+                        gameTime1++
+                        binding.gameTime1.text = gameTime1.toString()
+                        zerarPontos()
+
+
+                    } else if (pntTime2 - pntTime1 >= 2) {
+                        gameTime2++
+                        binding.gameTime2.text = gameTime2.toString()
+                        zerarPontos()
+
+
+                    }
+                }
+
+
+
+                if (gameTime1 >= 6 || gameTime2 >= 6) {
+
+                    if (gameTime1 - gameTime2 >= 2) {
+                        setTime1++
+                        binding.tenisSetTime1.text = setTime1.toString()
+                        gameTime1 = 0
+                        binding.gameTime1.text = gameTime1.toString()
+                        pntTime1 = 0
+                        binding.tenisPntTime1.text = pntTime1.toString()
+                    } else if (gameTime2 - gameTime1 >= 2) {
+
+                        setTime2++
+                        binding.tenisSetTime2.text = setTime2.toString()
+                        gameTime2 = 0
+                        binding.gameTime2.text = gameTime2.toString()
+                        pntTime2 = 0
+                        binding.tenisPntTime2.text = pntTime2.toString()
+                    }
+
+
+                }
+
+
+            }
+
 
         }
 
@@ -47,7 +127,94 @@ class Tenis : AppCompatActivity() {
 
         //PLACAR TIME2
 
+        if (pntTime2 == 0 || gameTime2 == 0) {
 
+            binding.tenisMaisTime2.setOnClickListener {
+
+
+                pntTime2 += 15
+                binding.tenisPntTime2.text = pntTime2.toString()
+
+
+                if (pntTime2 > 30) {
+
+
+                        pntTime2 = 40
+                        binding.tenisPntTime2.text = pntTime2.toString()
+
+                    }
+
+
+
+
+
+                if (pntTime1 == 40 && pntTime2 == 40) {
+                    binding.tenisMaisTime2.setOnClickListener {
+                        melhor2_time2++
+                        binding.melhor2Time2.text = melhor2_time2.toString()
+
+                        if (melhor2_time2 - melhor2_time1 >= 2) {
+                            gameTime1++
+                            binding.gameTime1.text = gameTime1.toString()
+                            zerarPontos()
+
+
+                        } else if (melhor2_time1 - melhor2_time2 >= 2) {
+                            gameTime2++
+                            binding.gameTime2.text = gameTime2.toString()
+                            zerarPontos()
+
+
+                        }
+
+
+                    }
+
+
+                } else if (pntTime1 > 40 || pntTime2 > 40) {
+                    if (pntTime1 - pntTime2 >= 2) {
+                        gameTime1++
+                        binding.gameTime1.text = gameTime1.toString()
+                        zerarPontos()
+
+
+                    } else if (pntTime2 - pntTime1 >= 2) {
+                        gameTime2++
+                        binding.gameTime2.text = gameTime2.toString()
+                        zerarPontos()
+
+
+                    }
+                }
+
+
+
+                if (gameTime1 >= 6 || gameTime2 >= 6) {
+
+                    if (gameTime1 - gameTime2 >= 2) {
+                        setTime1++
+                        binding.tenisSetTime1.text = setTime1.toString()
+                        gameTime1 = 0
+                        binding.gameTime1.text = gameTime1.toString()
+                        pntTime1 = 0
+                        binding.tenisPntTime1.text = pntTime1.toString()
+                    } else if (gameTime2 - gameTime1 >= 2) {
+
+                        setTime2++
+                        binding.tenisSetTime2.text = setTime2.toString()
+                        gameTime2 = 0
+                        binding.gameTime2.text = gameTime2.toString()
+                        pntTime2 = 0
+                        binding.tenisPntTime2.text = pntTime2.toString()
+                    }
+
+
+                }
+
+
+            }
+
+        }
 
 
     }
@@ -55,7 +222,7 @@ class Tenis : AppCompatActivity() {
     private fun placarTime2() {
         binding.tenisMaisTime2.setOnClickListener {
 
-            pntTime2 = pntTime2 + 15
+            pntTime2 += 15
             binding.tenisPntTime2.text = pntTime2.toString()
 
 
@@ -63,8 +230,9 @@ class Tenis : AppCompatActivity() {
                 pntTime2 = 40
                 binding.tenisPntTime2.text = pntTime2.toString()
 
-                verificarMelhor2()
+
             }
+
 
         }
     }
@@ -77,13 +245,15 @@ class Tenis : AppCompatActivity() {
             if (pntTime1 > 30) {
                 pntTime1 = 40
                 binding.tenisPntTime1.text = pntTime1.toString()
-               verificarMelhor2()
+
+
             }
+
 
         }
     }
 
-    private fun verificarMelhor2(){
+    private fun verificarMelhor2() {
 
         if (pntTime1 >= 40 && pntTime2 >= 40) {
             binding.tenisMaisTime1.setOnClickListener {
@@ -101,33 +271,31 @@ class Tenis : AppCompatActivity() {
 
             }
 
-            verificarGame()
-
 
         }
     }
 
-    private fun verificarGame(){
+    private fun verificarGame() {
 
-        if (pntTime1 >= 40 || pntTime2 >= 40) {
+        if (pntTime1 >= 41 || pntTime2 >= 41) {
             if (melhor2_time1 - melhor2_time2 >= 2) {
                 gameTime1++
                 binding.gameTime1.text = gameTime1.toString()
                 zerarPontos()
-                verificarSet()
 
 
             } else if (melhor2_time2 - melhor2_time1 >= 2) {
                 gameTime2++
                 binding.gameTime2.text = gameTime2.toString()
                 zerarPontos()
-                verificarSet()
+
 
             }
         }
 
     }
-        private fun zerarPontos() {
+
+    private fun zerarPontos() {
 
         pntTime1 = 0
         pntTime2 = 0
@@ -136,11 +304,9 @@ class Tenis : AppCompatActivity() {
         binding.tenisPntTime2.text = pntTime2.toString()
 
 
-
-
     }
 
-    private fun verificarSet(){
+    private fun verificarSet() {
 
         if (gameTime1 >= 6 || gameTime2 >= 6) {
 
@@ -168,9 +334,7 @@ class Tenis : AppCompatActivity() {
     }
 
 
-    }
-
-
+}
 
 
 //    private fun contagemTime1() {
