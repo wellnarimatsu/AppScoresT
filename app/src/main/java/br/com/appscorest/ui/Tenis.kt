@@ -162,7 +162,7 @@ class Tenis : AppCompatActivity() {
 
 
     private fun verificarGame() {
-        if (pntTime1 >= 40 || pntTime2 >= 40) {
+        if (pntTime1 >= 41 || pntTime2 >= 41) {
             if (pntTime1 - pntTime2 > 10) {
                 gameTime1++
                 binding.gameTime1.text = gameTime1.toString()
@@ -180,7 +180,7 @@ class Tenis : AppCompatActivity() {
 
     }
     private fun verificarSet(){
-        if(gameTime1 >= 6 || gameTime2 >= 6){
+        if(gameTime1 >= 5 || gameTime2 >= 5){
             if(gameTime1 - gameTime2 > 2){
                 setTime1++
                 binding.tenisSetTime1.text = setTime1.toString()
